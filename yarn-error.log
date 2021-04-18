@@ -1,0 +1,31 @@
+Arguments: 
+  /home/jordan/.nvm/versions/node/v14.16.0/bin/node /home/jordan/.nvm/versions/node/v14.16.0/bin/yarn global add nodemon --prefix /usr/local
+
+PATH: 
+  /home/jordan/.local/bin:/home/jordan/.nvm/versions/node/v14.16.0/bin:/home/jordan/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+
+Yarn version: 
+  1.22.10
+
+Node version: 
+  14.16.0
+
+Platform: 
+  linux x64
+
+Trace: 
+  SyntaxError: /home/jordan/Programming/my-shop/my-shop/package.json: Unexpected end of JSON input
+      at JSON.parse (<anonymous>)
+      at /home/jordan/.nvm/versions/node/v14.16.0/lib/node_modules/yarn/lib/cli.js:1625:59
+      at Generator.next (<anonymous>)
+      at step (/home/jordan/.nvm/versions/node/v14.16.0/lib/node_modules/yarn/lib/cli.js:310:30)
+      at /home/jordan/.nvm/versions/node/v14.16.0/lib/node_modules/yarn/lib/cli.js:321:13
+
+npm manifest: 
+  
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
