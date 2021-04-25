@@ -1,37 +1,37 @@
 const INITIAL_STATE = {
     sections: [
         {
-          title: 'hats',
-          imageUrl: 'https://i.ibb.co/cvpntL1/hats.png',
+          title: 'beer',
+          imageUrl: 'https://i.ibb.co/dgWh4Md/i-Stock-520704188-e1525358992421.jpg',
           id: 1,
-          linkUrl: 'shop/hats'
+          linkUrl: 'shop/beer'
         },
         {
-          title: 'jackets',
-          imageUrl: 'https://i.ibb.co/px2tCc3/jackets.png',
+          title: 'sasuages',
+          imageUrl: 'https://i.ibb.co/6nFvJ1b/sasuage.jpg',
           id: 2,
-          linkUrl: 'shop/jackets'
+          linkUrl: 'shop/sasuages'
         },
         {
-          title: 'sneakers',
-          imageUrl: 'https://i.ibb.co/0jqHpnp/sneakers.png',
+          title: 'cheese',
+          imageUrl: 'https://i.ibb.co/d4pW2p2/cheese.jpg',
           id: 3,
-          linkUrl: 'shop/sneakers'
+          linkUrl: 'shop/cheese'
         },
         {
-          title: 'womens',
-          imageUrl: 'https://i.ibb.co/GCCdy8t/womens.png',
+          title: 'liquor',
+          imageUrl: 'https://i.ibb.co/wLQJ692/liquor.jpg',
           size: 'large',
           id: 4,
-          linkUrl: 'shop/womens'
+          linkUrl: 'shop/liquor'
         },
         {
-          title: 'mens',
-          imageUrl: 'https://i.ibb.co/R70vBrQ/men.png',
+          title: 'Equipment',
+          imageUrl: 'https://i.ibb.co/j54pnZH/store.jpg',
           size: 'large',
           id: 5,
-          linkUrl: 'shop/mens'
-        }
+          linkUrl: 'shop/equipment'
+        },
       ]
 }
 
