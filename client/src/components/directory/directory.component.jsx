@@ -15,7 +15,6 @@ const Directory = ({ sections }) => (
       <MenuItem key={id} {...otherSectionProps} />
       
     ))}
-    {console.log(sections)}
   </div>
 );
 

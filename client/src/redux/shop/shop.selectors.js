@@ -29,3 +29,13 @@ export const selectIsCollectionLoaded = createSelector(
     [selectShop],
     shop => !!shop.collections 
 )
+
+export const selectAllCollectionItems = createSelector(
+    [selectCollections],
+    collections => Object.values(collections).map(collection => collection.items).flat()
+)
+
+export const selectCollectionItemByID = (id) => createSelector(
+    [selectAllCollectionItems],
+    items => items.filter(item => item.id === id )[0]
+)

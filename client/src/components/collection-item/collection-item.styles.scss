@@ -20,7 +20,7 @@
       width: 80%;
       opacity: 0.7;
       position: absolute;
-      top: 255px;
+      bottom: 255px;
       display: none;
       @media screen and (max-width: 800px) {
         display: block;
@@ -28,7 +28,11 @@
         min-width: unset;
         padding: 0 10px;
       }
-    
+    }
+
+    .custom-button:last-child {
+      top: 255px;
+
     }
     
     &:hover {
@@ -37,7 +41,7 @@
 
       }
 
-      .custom-button {
+      .custom-button{
         opacity: 0.85;
         display: flex;
       }
