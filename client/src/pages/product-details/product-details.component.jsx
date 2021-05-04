@@ -4,12 +4,22 @@ import CustomButton from '../../components/custom-button/custom-button.component
 
 import { selectAllCollectionItems, selectCollectionItemByID } from '../../redux/shop/shop.selectors';
 import { addItem } from '../../redux/cart/cart.actions'
+import swal from 'sweetalert';
 
 
 import './product-details.styles.scss'
 
 const ProductDetailsPage = ({item, dispatch}) => {
     const { imageUrl, name } = item;
+
+    const handleAddToCartClick = (item) => {
+        dispatch(addItem(item))
+        swal({
+            icon: "success",
+            text: "You've successfully added item to cart"
+        })
+    }
+
     return (
     <div className="page-wrapper">
         <div className="image-container">
@@ -23,7 +33,7 @@ const ProductDetailsPage = ({item, dispatch}) => {
         <div className="content-container">
             <h2>{name}</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea corrupti placeat voluptates eius voluptatibus. Dolor ipsum assumenda quia enim nesciunt veniam natus quisquam deleniti animi similique consequatur dolore possimus, minima explicabo asperiores ducimus ea quibusdam id at sunt corporis fuga laudantium molestias? In aut quia excepturi asperiores consequatur obcaecati minima!</p>
-            <CustomButton onClick={() => dispatch(addItem(item))}>ADD ITEM TO CART</CustomButton>
+            <CustomButton onClick={() => handleAddToCartClick(item)}>ADD ITEM TO CART</CustomButton>
         </div>
 
     </div>

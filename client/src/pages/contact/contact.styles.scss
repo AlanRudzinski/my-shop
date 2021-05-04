@@ -4,4 +4,12 @@
     justify-content: space-between;
     width: 750px;
     margin: 0 auto;
+    @media screen and (max-width: 800px) {
+        flex-direction: column;
+        width: 100%;
+
+        address {
+            margin-top: 80px;
+        }
+    }
 }

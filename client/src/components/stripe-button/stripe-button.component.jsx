@@ -2,6 +2,8 @@ import React from 'react';
 import StripeCheckout from 'react-stripe-checkout';
 import axios from 'axios';
 
+import CustomButton from '../custom-button/custom-button.component';
+
 
 const StripeCheckoutButton = ({ price }) => {
     const priceForStripe = price * 100;
@@ -16,15 +18,13 @@ const StripeCheckoutButton = ({ price }) => {
             }
         }).then(response => {
             alert('Payment successful')
-            console.log(response)
+            // console.log(response)
         }).catch(error => {
-            console.log('Payment error: ', JSON.parse(error))
+            // console.log('Payment error: ', JSON.parse(error))
             alert('There was an issue with your payment')
         })
     }
-
-    return (
-        <StripeCheckout
+    return (<StripeCheckout
             label='Pay Now'
             name='CraftStore'
             billingAddress
@@ -35,8 +35,9 @@ const StripeCheckoutButton = ({ price }) => {
             panelLabel='Pay Now'
             token={onToken}
             stripeKey={publishableKey}
-        />
-
+        >
+            <CustomButton>Pay Now </CustomButton>
+        </StripeCheckout>
     )
 }
 
